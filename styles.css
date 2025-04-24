@@ -125,4 +125,42 @@ button:hover {
   text-align: center;
 }
 
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.product {
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 16px;
+  border: 4px solid transparent;
+  transition: transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+}
+
+.product:hover {
+  transform: scale(1.05);
+}
+
+/* Gradient styles by fruit */
+.orange-gradient { border-image: linear-gradient(to right, #FFA500, #FF8C00) 1; }
+.apple-gradient { border-image: linear-gradient(to right, #a8e063, #56ab2f) 1; }
+.pineapple-gradient { border-image: linear-gradient(to right, #fceabb, #f8b500) 1; }
+.lemon-gradient { border-image: linear-gradient(to right, #fdfd96, #ffff00) 1; }
+.mango-gradient { border-image: linear-gradient(to right, #ffcc33, #ff9900) 1; }
+.passion-gradient { border-image: linear-gradient(to right, #9900ff, #cc00cc) 1; }
+.dragon-gradient { border-image: linear-gradient(to right, #ff00cc, #ff3366) 1; }
+.papaya-gradient { border-image: linear-gradient(to right, #fca17d, #f87575) 1; }
+.grapefruit-gradient { border-image: linear-gradient(to right, #ff6f61, #ff4e50) 1; }
+.banana-gradient { border-image: linear-gradient(to right, #fff275, #ffd700) 1; }
+.pear-gradient { border-image: linear-gradient(to right, #d0e17d, #96c93d) 1; }
 
