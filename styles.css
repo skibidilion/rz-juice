@@ -1,0 +1,28 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+  text-align: center;
+  padding: 50px;
+  color: #2d2d2d;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  color: #ff4e00;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #ff4e00;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: #ff7700;
+}
