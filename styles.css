@@ -1,15 +1,23 @@
+/* ===== Base Styles ===== */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #ffecd2, #fcb69f);
   text-align: center;
   padding: 50px;
   color: #2d2d2d;
+  margin: 0;
 }
 
 h1 {
   font-size: 3em;
   margin-bottom: 10px;
   color: #ff4e00;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin: 60px 0 20px;
+  color: #333;
 }
 
 button {
@@ -27,15 +35,29 @@ button:hover {
   background-color: #ff7700;
 }
 
+/* ===== Back Button ===== */
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  font-size: 1.2em;
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ===== About Section ===== */
 .about-section {
   margin-top: 100px;
-  padding: 50px 30px; /* Increased top and bottom padding */
+  padding: 50px 30px;
   background: linear-gradient(to right, #56ccf2, #2f80ed);
   border-radius: 10px;
   color: white;
   text-align: center;
 }
-
 
 .about-section h2 {
   font-size: 2.5em;
@@ -48,6 +70,7 @@ button:hover {
   margin: 0 auto;
 }
 
+/* ===== Contact Section ===== */
 .contact-section {
   background-color: white;
   padding: 60px 30px;
@@ -65,29 +88,14 @@ button:hover {
   font-size: 1.3em;
   margin: 15px 0;
 }
-/* Order Page Styling */
+
+/* ===== Order Page ===== */
 .order-page {
   background: linear-gradient(to bottom right, #fff7ae, #fff0c1);
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  padding: 40px;
-  text-align: center;
+  padding: 40px 20px;
 }
 
-/* Make back button top-left */
-.back-button {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-decoration: none;
-  font-size: 1.2em;
-  background-color: #ffcc00;
-  color: #333;
-  padding: 10px 20px;
-  border-radius: 20px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-/* Responsive grid */
+/* ===== Product Grid ===== */
 .product-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -97,7 +105,7 @@ button:hover {
   padding: 0 20px;
 }
 
-/* Product box */
+/* ===== Product Box ===== */
 .product {
   background-color: white;
   border-radius: 12px;
@@ -108,15 +116,14 @@ button:hover {
   flex-direction: column;
   align-items: center;
   height: 200px;
+  justify-content: center;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease;
 }
 
-/* Product image */
-.product img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.product:hover {
+  transform: translateY(-5px);
 }
 
 .product p {
@@ -125,3 +132,23 @@ button:hover {
   text-align: center;
 }
 
+.product img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* ===== Drink Type Styles ===== */
+.fresh {
+  background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.sparkling {
+  background: linear-gradient(to right, #d9e4f5, #a3c0f7);
+}
+
+.slushy {
+  background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+}
