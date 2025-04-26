@@ -1,4 +1,11 @@
 /* ===== Base Styles ===== */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: block; /* <-- makes pages stack vertically by default */
+}
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #ffecd2, #fcb69f);
