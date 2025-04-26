@@ -1,11 +1,4 @@
 /* ===== Base Styles ===== */
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: block; /* <-- makes pages stack vertically by default */
-}
-
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: linear-gradient(to right, #ffecd2, #fcb69f);
@@ -158,46 +151,4 @@ button:hover {
 
 .slushy {
   background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-}
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  display: flex;
-  height: 100vh;
-}
-
-.left {
-  flex: 1;
-  background: #f0f0f0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.left img {
-  max-width: 100%;
-  max-height: 90%;
-}
-
-.right {
-  flex: 1;
-  padding: 2rem;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--bg-color);
-  color: #333;
-}
-
-h1 {
-  margin-top: 0;
-}
-
-.ingredients, .pulp-options, .cart-button {
-  margin-top: 1.5rem;
-}
-
-.pulp-options button, .cart-button button {
-  padding: 0.5rem 1rem;
-  margin-right: 1rem;
-  cursor: pointer;
 }
